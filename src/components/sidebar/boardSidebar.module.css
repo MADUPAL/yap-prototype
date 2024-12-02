@@ -1,0 +1,28 @@
+nav {
+  display: grid;
+  place-items: center;
+  width: 100px;
+}
+.nav_list {
+  list-style: none;
+  display: grid;
+  gap: 5px;
+  padding-block: 20px;
+  font-size: 14px;
+}
+
+.nav_list li {
+  background-color: var(--tapBg);
+  writing-mode: vertical-lr;
+  padding: 20px 15px;
+  text-align: end;
+  border-radius: 16px 0px 0 16px;
+  cursor: pointer;
+}
+.nav_link {
+  padding: 20px 15px;
+}
+.nav_link_active {
+  background-color: #abe648;
+  color: black;
+}
