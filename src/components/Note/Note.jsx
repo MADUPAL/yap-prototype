@@ -20,8 +20,8 @@ const initialNodes = [
     position: { x: 15, y: 100 },
     data: { label: "Hello" },
     style: {
-      minHeight: "max-content",
-      minWidth: "max-content",
+      minHeight: "200px",
+      minWidth: "200px",
     },
   },
 ];
@@ -42,8 +42,8 @@ const Note = () => {
       },
       data: { label: "Hello" },
       style: {
-        minHeight: "max-content",
-        minWidth: "max-content",
+        minHeight: "200px",
+        minWidth: "200px",
       },
     };
     setNodes((nds) => nds.concat(newNode));
@@ -83,8 +83,7 @@ const Note = () => {
         <Controls />
         <Panel>
           <div style={{ padding: "10px", backgroundColor: "white" }}>
-            <h1> temp </h1>
-            <button onClick={onClickAddNode}>make a new one</button>
+            <div onClick={onClickAddNode}>+</div>
           </div>
         </Panel>
       </ReactFlow>

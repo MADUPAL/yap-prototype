@@ -7,10 +7,10 @@ function NoteNode({ data }) {
   const onChange = useCallback((evt) => {
     console.log(evt.target.value);
   }, []);
-
+  console.log(data.label);
   return (
     <div className={styles.note_node}>
-      <NodeResizer
+      {/* <NodeResizer
         handleStyle={{
           width: 20,
           height: 20,
@@ -18,7 +18,7 @@ function NoteNode({ data }) {
           border: "none",
         }}
         lineStyle={{ border: "5px solid transparent" }}
-      />
+      /> */}
 
       <CreateNote />
     </div>
