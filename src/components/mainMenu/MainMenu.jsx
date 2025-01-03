@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./mainMenu.module.css";
 const MainMenu = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{'color': 'white'}}>
       <div className={styles.main_grid}>
         <div className={styles.box}>
           <div className={styles.flexbox}>

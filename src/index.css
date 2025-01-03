@@ -1,9 +1,9 @@
 :root {
   --bg: #202020;
-  --textColor: white;
+  --textColor: rgb(0, 0, 0);
   --softBg: #4f4f4f;
   --tapBg: #3d3d3d;
-  --softTextColor: #626262;
+  --softTextColor: #000000;
 }
 
 * {
@@ -93,4 +93,8 @@ a {
 
 .note-menu-searchbox {
   width: 100px;
+}
+
+.button-hover :hover {
+  background: white;
 }

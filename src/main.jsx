@@ -16,7 +16,7 @@ import PlanPage from "./pages/PlanPage";
 import BlackboardPage from "./pages/BlackboardPage";
 import FeedPage from "./pages/FeedPage";
 import SchedulePage from "./pages/SchedulePage";
-
+import { GlobalProvider } from "./providers/GlobalProvider";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -54,7 +54,9 @@ const router = createBrowserRouter([
   },
 ]);
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+  <GlobalProvider>
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>
+  </GlobalProvider>
 );
